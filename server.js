@@ -15,6 +15,12 @@ app.get('/', function(req, res) {
   res.render('pages/index', {index_data: index_data, branding_data: branding_data});
 });
 
+// hosted sites
+
+//var [sitename]_site = require('[sitepath]/server.js');
+
+//app.use('/[sitename]/', [sitename]_site);
+
 // end of pages
 
 app.listen(9000);
