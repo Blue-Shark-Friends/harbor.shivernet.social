@@ -17,5 +17,11 @@ app.get('/', function(req, res) {
 
 // end of pages
 
-app.listen(8080);
-console.log('Server is listening on port 8080');
+if (process.env.NODE_ENV == 'production') {
+	app.listen(9000, "169.197.80.54");
+	console.log('[PROD] Server is listening on 169.197.80.52:9000');
+}
+else {
+	app.listen(9000);
+	console.log('[DEV] Server is listening on port 9000');	
+}

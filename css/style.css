@@ -12,6 +12,115 @@ body {
   width:fit-content;
 }
 
+.subpage-content {
+  margin: 0 auto;
+}
+
+.subpage-content h2 {
+  margin: 0 auto;
+}
+
+div.pros-cons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: auto;
+  flex-wrap: wrap;
+  align-items: start;
+  padding-bottom: 0;
+}
+
+.hosting div.pros-cons {
+  padding-bottom: 0;
+}
+
+div.column {
+  width: 50%;
+  padding-bottom: 0;
+}
+
+.hosting div.column {
+  padding-bottom: 0;
+}
+
+.pros h4 {
+  color: green;
+}
+
+.cons h4 {
+  color: red;
+}
+
+.column ul {
+  margin-bottom: 0;
+}
+
+.main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+}
+
+.main .cardlink {
+  border: 2px solid #888888;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 2px 5px black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  gap: 10px;
+  width:13em;
+  vertical-align: center;
+}
+
+.main .cardlink .shiverlogo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main .cardlink .shiverlogo img {
+  object-fit: contain;
+}
+
+.main .cardlink .shiverdetails {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.main .cardlink .shiverdetails label {
+  margin-bottom: 5px;
+}
+
+.main .cardlink .shiverdetails small {
+  margin-bottom: 2px;
+}
+
+.shiverlogobox {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.shiverdetailsbox {
+	display: flex;
+	margin: auto;
+	align-items: left;
+	margin: 10px;
+}
+
 .poweredby {
   margin-top: 20px;
   display: flex;
@@ -264,8 +373,7 @@ p.inline {
 
 .script-text {
   font-family: "Trebuchet MS", sans-serif;
-  margin-top: 20px;
-  margin-left: 30%;
+  margin-top: 0px;
 }
 
 .script-text p {
@@ -310,6 +418,24 @@ p.inline {
   color: #F5A9B8;
 }
 
+.hosting div {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.hosting h3 {
+  color: #dd526e;
+  margin-bottom: 5px;
+}
+
+.hosting p {
+  text-align: left;
+}
+
+.hosting b {
+  color: #F5A9B8;
+}
+
 .license {
   font-size: small;
 }
@@ -335,6 +461,13 @@ p.inline {
   gap: 20px;
 }
 
+.shiverbox {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  gap: 20px;
+}
+
 @media screen and (min-width: 800px) {
   #header-img {
     width: 38vh;
@@ -344,11 +477,20 @@ p.inline {
   .content {
     width: 100%;
   }
+  .subpage-content {
+    width: 50%;
+  }
   .content p {
     width: 50%;
   }
+  .subpage-content p {
+    width: auto;
+  }
   .bio {
     width: 50%;
+  }
+  .content .bio p {
+    width: auto;
   }
 }
 
@@ -362,8 +504,14 @@ p.inline {
   .content {
     width: 100%;
   }
+  .subpage-content {
+    width: 80%;
+  }
   .content p {
     width: 80%;
+  }
+  .subpage-content p {
+    width: auto;
   }
   .script-text {
     margin-left: 10%;
@@ -373,5 +521,8 @@ p.inline {
   }
   .bio {
     width: 90%;
+  }
+  .content .bio p {
+    width: auto;
   }
 }

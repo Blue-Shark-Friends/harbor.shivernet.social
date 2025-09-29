@@ -8,24 +8,60 @@
 
 <div class="content">
   <%- include('../partials/header', {title:index_data.title}) %>
-
-  <div class="purpleblock">
-<img id="header-img" src="<%= branding_data.header_img %>" alt="Picture of [User]" />
-  <div class="pronouns">
-    <span><%= index_data.pronouns %></span>
-  </div>
-
-  <div class="shortbio">
-    <%= index_data.short_bio %>
-  </div>
-</div>
-
-  <div class="bio">
-    <%= index_data.long_bio %>
+	<div class="script-text">
+		  <span><%= branding_data.tagline %></span>
+	</div>
+	<div class="main">
+		  <div class="cardlink">
+			<div class="shiverlogo">
+				<a href="https://hannahparker.bluesharkfriends.com" style="margin-top: 10px; margin-bottom: 10px">
+					<img src="images/hannah.jpg" width="50px" height="50px" style="border-radius: 50%; object-fit: cover" />
+				</a>
+			</div>
+			<div class="shiverdetails">
+				<label><a href="https://hannahparker.bluesharkfriends.com">Hannah Parker</a></label>
+				<small>My Shivers</small>
+				<div class="shiverbox">
+					<a href="https://bluesharkfriends.com/shiver">
+					<img src="images/BlueSharkFriends_Logo_Gradient.jpg" width="30px" style="border-radius:50%">
+					</a>
+				</div>
+			</div>
+		  </div>
+		  <div class="cardlink">
+			<div class="shiverlogo">
+				<a href="https://josiestewart.bluesharkfriends.com" style="margin-top: 10px; margin-bottom: 10px">
+					<img src="images/josie.png" width="50px" height="50px" style="border-radius: 50%" />
+				</a>
+			</div>
+			<div class="shiverdetails">
+				<label><a href="https://josiestewart.bluesharkfriends.com">Josie Stewart</a></label>
+				<small>My Shivers</small>
+				<div class="shiverbox">
+					<a href="https://bluesharkfriends.com/shiver">
+					<img src="images/BlueSharkFriends_Logo_Gradient.jpg" width="30px" style="border-radius:50%">
+					</a>
+				</div>
+			</div>
+		  </div>
+	</div>
+	<div class="bio">
+		<p>
+			<small>Are you an organization interested in building coalitions with other digital communities?  Consider joining the <a href="https://shivernet.social">Shivernet</a>.</small>
+		</p>
+	</div>
   </div>
 
   <div class="greenblock textblock">
-    <p><em>They are changing the world.</em></p>
+	<h2>
+		Join as an Individual
+	</h2>
+	<ul>
+		<li>Link your personal website.</li>
+		<li>Link your shivers (e.g. <a href="https://bluesharkfriends.com/shiver"> Blue Shark Friends</a>).</li>
+		<li><a href="https://home.bluesharkfriends.com/index.php/s/5BN2D7xY4w2QCFt">Submit</a> your name and photo (e.g. FirstName_LastName.jpg).</li>
+		<li>Fill out this <a href="https://home.bluesharkfriends.com/index.php/apps/forms/s/E9aNrcxa47LXWJ8n2wRnGfRD">form</a>.</li>
+	</ul>
   </div>
 
 
