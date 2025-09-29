@@ -77,7 +77,7 @@ div.column {
   color: black;
   padding: 10px;
   gap: 10px;
-  width:15em;
+  width:13em;
   vertical-align: center;
 }
 
@@ -97,6 +97,14 @@ div.column {
   flex-direction: column;
   flex-wrap: wrap;
   width: auto;
+}
+
+.main .cardlink .shiverdetails label {
+  margin-bottom: 5px;
+}
+
+.main .cardlink .shiverdetails small {
+  margin-bottom: 2px;
 }
 
 .shiverlogobox {
